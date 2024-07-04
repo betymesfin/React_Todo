@@ -16,11 +16,18 @@ function App() {
     id: 3,
     title: 'Complete Assignment',
   },])
-
+  const addTodo = (title) => {
+    const newTodoItem = {
+      id: Math.random(),
+      title: title,
+    };
+    settodoList([...todoList, newTodoItem]);
+    setNewTodo(title);
+  };
 return (
    <div>
      <h1>Todo List</h1>
-     <AddTodoForm onAddTodo={setNewTodo}/>
+     <AddTodoForm onAddTodo={addTodo}/>
      <p> Adding <strong>{newTodo} </strong></p>
      <TodoList todos={todoList}/>
    </div>
