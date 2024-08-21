@@ -21,23 +21,40 @@ function App() {
   const[todoList,settodoList]= React.useState([])
   const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(()=>{
-    new Promise((resolve,reject)=>{
-    setTimeout(() => {
-    const object = {
-      data: {
-        todoList:OtodoList,
+  const fetchData = async() => {
+  
+    const options = {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${import.meta.env.VITE_AIRTABLE_API_TOKEN}`,
       },
     };
-    resolve(object);
 
-  }, 2000);
-})
-.then((result) => {
-  settodoList(result.data.todoList);
-  setIsLoading(false)
+    const url = `https://api.airtable.com/v0/${import.meta.env.VITE_AIRTABLE_BASE_ID}/${import.meta.env.VITE_TABLE_NAME}`
 
-});
+    try {
+      const response = await fetch(url, options);
+
+      if (!response.ok) {
+        throw new Error(`${response.status}`);
+      }
+      const data = await response.json();
+      const todos = data.records.map((todo) => {
+        return { id: todo.id, title: todo.fields.Title };
+      });
+      
+
+      settodoList(todos);
+      setIsLoading(false);
+  }
+  catch (error) {
+    console.log(error.message);
+    return null;
+  }
+}
+
+  React.useEffect(()=>{
+    fetchData()
 }, [])
 
   React.useEffect(()=>{ 
