@@ -2,7 +2,7 @@ import * as React from 'react';
 import TodoList from './TodoList';
 import AddTodoForm from './AddTodoForm';
 import "./App.css";
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 /*const useSemiPersistentState=()=>{
   const OtodoList= JSON.parse(localStorage.getItem("savedTodoList")) ?? []
@@ -76,12 +76,22 @@ function App() {
 
 
 return (
-   <>
-     <h1>Todo List</h1>
-     <AddTodoForm onAddTodo={addTodo}/>
-     { isLoading ? <p>Loading...</p> :
-     <TodoList onRemoveTodo={removeTodo} todoList={todoList}/>}
-   </>
-);
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <h1>Todo List</h1>
+              <AddTodoForm onAddTodo={addTodo} />
+              {isLoading ? <p>Loading...</p> : <TodoList onRemoveTodo={removeTodo} todoList={todoList} />}
+            </>
+          }
+        />
+      <Route path="/new" element={<h1>New ToDo List</h1>} />
+      </Routes>
+      
+    </BrowserRouter>
+  );
 }
-export default App
+export default App;
