@@ -1,4 +1,54 @@
 .ListItem {
     color: black;
+    margin-bottom: 15px;
+    }
+.deleteBtn {
+    background: none;           
+    color: red;
+    padding: 8px;               
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
   }
   
+.deleteBtn:hover {
+    color: darkred;
+    transform: scale(1.05);    
+  }
+.buttonsContainer {
+  display: flex;              
+  gap: 10px;                  
+}
+
+.button {
+  padding: 8px 12px;          
+  border-radius: 5px;         
+  font-family: 'Nerko One', sans-serif;
+  font-size: 16px;            
+  border: none;               
+  cursor: pointer;            
+  transition: all 0.2s ease;  
+}
+
+.button:hover {
+  opacity: 0.9;               
+  transform: scale(1.05);  
+}
+
+.doneBtn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.doneBtn:hover {
+  background-color: #45a049;
+}
+.h1 {
+  color: #380202;
+}

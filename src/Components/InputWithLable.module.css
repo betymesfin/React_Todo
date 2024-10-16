@@ -1,0 +1,14 @@
+.titleinput {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .titleinput:focus {
+    border-color: #b2b1b1;
+  }
+  
