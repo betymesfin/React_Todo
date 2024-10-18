@@ -1,5 +1,5 @@
 button {
-  background-color: #008cba; 
+  background-color: #00bfa5; 
   color: #ffffff;
   border: none;
   border-radius: 30px;
@@ -10,12 +10,12 @@ button {
 }
 
 button:hover {
-  background-color: #007399; 
+  background-color: #00bfa5; 
 }
 
 
 .fab {
-  background-color: #008cba; 
+  background-color: #00bfa5; 
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
