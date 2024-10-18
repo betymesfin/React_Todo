@@ -1,54 +1,65 @@
-.ListItem {
-    color: black;
-    margin-bottom: 15px;
-    }
-.deleteBtn {
-    background: none;           
-    color: red;
-    padding: 8px;               
-    border-radius: 5px;
-    cursor: pointer;
-    transition: color 0.2s ease, transform 0.2s ease;
-  }
-  
-.deleteBtn:hover {
-    color: darkred;
-    transform: scale(1.05);    
-  }
-.buttonsContainer {
-  display: flex;              
-  gap: 10px;                  
-}
-
-.button {
-  padding: 8px 12px;          
-  border-radius: 5px;         
-  font-family: 'Nerko One', sans-serif;
-  font-size: 16px;            
-  border: none;               
-  cursor: pointer;            
-  transition: all 0.2s ease;  
-}
-
-.button:hover {
-  opacity: 0.9;               
-  transform: scale(1.05);  
-}
-
-.doneBtn {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
+button {
+  background-color: #00d1b2; /* Teal accent */
+  color: #ffffff;
   border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds slight shadow for a lift effect */
+  
+  
 }
 
-.doneBtn:hover {
-  background-color: #45a049;
+button:hover {
+  background-color: #00bfa5; /* Slightly darker on hover */
 }
-.h1 {
-  color: #380202;
+
+/* Add a floating action button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00d1b2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fab:hover {
+  background-color: #00bfa5;
+}
+
+/* Styling headers to match the accent color */
+h1 {
+  color: #00d1b2;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Media query to ensure the design is responsive */
+@media (max-width: 600px) {
+  li {
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .fab {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
 }

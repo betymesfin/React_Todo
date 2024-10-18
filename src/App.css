@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   font-size: 20px;
-  
 }
 
 ul {
   padding-left: 0;
+}
+
+body {
+  background-color: #2c2c2c; /* Lighter dark background */
+  background-image: radial-gradient(circle at top left, #3a3a3a, #2c2c2c); /* Light gradient for more depth */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Nerko One', sans-serif;
+  color: #f5f5f5; /* Slightly off-white for a softer contrast */
 }
 
 li {
@@ -20,45 +31,26 @@ li {
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  padding: 0.1rem;
-  margin-bottom: 0.5rem;
   padding: 0.6rem 2rem;
+  margin-bottom: 0.5rem;
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.049);
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.008) 0%,
-    rgba(255, 255, 255, 0.076) 100%
-  );
-  border: 1px inset rgba(255, 255, 255, 0.129);
+  background-color: #424242; /* Medium grey for list items */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-body {
-  background-image: url('https://images.pexels.com/photos/2736499/pexels-photo-2736499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-position: center; 
-  min-height: 100vh;
-  margin: 0; 
-  height: 100vh; 
-  font-family: 'Nerko One', sans-serif
-}
-
 
 nav {
   position: fixed; 
   top: 0;
   left: 0;
   right: 0; 
-  background-color: #676869;
-  padding: 1px;
+  background-color: #282828; /* Dark navbar */
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
-
 
 nav ul {
   list-style-type: none; 
@@ -74,10 +66,10 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #44212c; 
+  color: #00d1b2; /* Teal accent for links */
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  text-decoration:wavy;
+  text-decoration: wavy;
 }
