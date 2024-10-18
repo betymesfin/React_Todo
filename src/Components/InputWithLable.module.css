@@ -1,7 +1,7 @@
 .titleinput {
-  background-color: #f9f9f9; /* Light input background */
+  background-color: #f9f9f9; 
   color: #333;
-  border: 2px solid #ccc; /* Lighter border */
+  border: 2px solid #ccc; 
   border-radius: 8px;
   outline: none;
   padding: 10px;
@@ -10,5 +10,5 @@
 }
 
 .titleinput:focus {
-  border-color: #008cba; /* Blue accent for focused input */
+  border-color: #008cba; 
 }

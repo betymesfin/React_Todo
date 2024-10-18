@@ -1,5 +1,5 @@
 button {
-  background-color: #00d1b2; /* Teal accent */
+  background-color: #008cba; 
   color: #ffffff;
   border: none;
   border-radius: 30px;
@@ -7,38 +7,25 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds slight shadow for a lift effect */
-  
-  
 }
 
 button:hover {
-  background-color: #00bfa5; /* Slightly darker on hover */
+  background-color: #007399; 
 }
 
-/* Add a floating action button */
+
 .fab {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #00d1b2;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #008cba; 
   color: #ffffff;
-  font-size: 2rem;
-  cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .fab:hover {
   background-color: #00bfa5;
 }
 
-/* Styling headers to match the accent color */
+
 h1 {
   color: #00d1b2;
   font-size: 2.5rem;
@@ -46,7 +33,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* Media query to ensure the design is responsive */
+
 @media (max-width: 600px) {
   li {
     font-size: 1.1rem;

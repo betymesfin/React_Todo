@@ -1,5 +1,5 @@
 .addbtn {
-  background-color: #00d1b2; /* Teal accent */
+  background-color: #00d1b2; 
   color: white;
   border: none;
   padding: 10px 15px;
@@ -10,11 +10,11 @@
 }
 
 .addbtn:hover {
-  background-color: #00bfa5; /* Darker teal on hover */
+  background-color: #00bfa5; 
 }
 
 .title {
-  color: #ffffff; /* White text for contrast on dark background */
+  color: #ffffff; 
   font-family: 'Nerko One', sans-serif;
   font-size: 1.5em;
 }
