@@ -1,4 +1,52 @@
-.ListItem {
-    color: black;
+button {
+  background-color: #00bfa5; 
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bfa5; 
+}
+
+
+.fab {
+  background-color: #00bfa5; 
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.fab:hover {
+  background-color: #00bfa5;
+}
+
+
+h1 {
+  color: #00d1b2;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 600px) {
+  li {
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
   }
-  
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .fab {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
